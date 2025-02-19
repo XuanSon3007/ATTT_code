@@ -121,15 +121,14 @@ string encrypt(char matrix[5][5], string text) {
 }
 
 int main() {
-    string plaintext, key;
+    string plaintext;
+    string key = "hethongnhungiot";
     char matrix[5][5];
     
     // Nhận đầu vào
     cout << "Enter plaintext: ";
     getline(cin, plaintext);
-    cout << "Enter key: ";
-    getline(cin, key);
-    
+   
     // Tạo ma trận khóa
     createKeyMatrix(key, matrix);
     
